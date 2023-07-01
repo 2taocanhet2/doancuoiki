@@ -31,9 +31,7 @@ public class WebSercurityConfig extends WebSecurityConfigurerAdapter {
         return new UserDetailsServiceImpl(userRepository);
     }
 
-
     @Bean
-    @Lazy
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
